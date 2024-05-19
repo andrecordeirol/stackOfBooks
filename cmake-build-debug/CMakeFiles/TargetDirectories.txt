@@ -1,0 +1,3 @@
+C:/estrutura_de_dados_I_note/codigos/Atividades/Cap2/ativ1/cmake-build-debug/CMakeFiles/ativ1.dir
+C:/estrutura_de_dados_I_note/codigos/Atividades/Cap2/ativ1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/estrutura_de_dados_I_note/codigos/Atividades/Cap2/ativ1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
