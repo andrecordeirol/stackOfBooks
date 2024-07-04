@@ -56,7 +56,7 @@ void stack_in(){
     }
     else {
         printf("\nEnter the code of the book: ");
-        scanf("%d", stack.data[stack.end].code);
+        scanf("%d", &stack.data[stack.end].code);
         printf("\nEnter the name of the book: ");
         scanf("%s", stack.data[stack.end].name);
         printf("\nEnter the author of the book: ");
@@ -71,16 +71,19 @@ void stack_out(){
         system("pause");
     }
     else {
-        stack.data[stack.end-1] = 0;
+        stack.data[stack.end-1].code = 0;
+        strcpy(stack.data[stack.end-1].name, "");
+        strcpy(stack.data[stack.end-1].author, "");
         stack.end--;
     }
 }
 
 void show_stack(){
+    printf("[ ");
     for (int i = 0; i < size; ++i) {
-        printf("[ %d,",stack.data[i]);
+        printf("%d,",stack.data[i].code);
     }
-    printf("]");
+    printf("]\n\n");
 }
 
 void show_menu(){
